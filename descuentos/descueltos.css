@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.descuentos {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    height: 15rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.inpunt-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container-percent {
+    display: flex;
+}
+#costo {
+    margin-right: 1.8rem;
+    width: 5rem;
+}
+#percent {
+    width: 5rem;
+    margin-right: 1rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+.mostrarResultado {
+    margin-right: 2rem;
+}
