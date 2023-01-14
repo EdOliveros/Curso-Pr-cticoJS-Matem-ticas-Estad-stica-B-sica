@@ -36,11 +36,20 @@ function calcularTotal() {
         return cuponElement.name == cupon;
     }
 
-    // filter, recorre cada pedazo de un array, y puede ejecutar una funcion por cada elemento, depende de que le pase como argument o.
-    const cuponInArray = cuponList.filter(isCoupnInArray)
+    // filter, recorre cada pedazo de un array, y puede ejecutar una funcion por cada elemento, depende de que le pase como argument.
+    // const cuponInArray = cuponList.filter(isCoupnInArray)
+    // if (cuponInArray.length > 0) {
+    //     valorDescuento = cuponInArray[0].valorDescuento;
+    // } else {
+    //     mostrarResultado.innerHTML = "El cupon no es Valido"
+    //     return;
+    // }
+
+    // find, me devuelve un objeto, a diferencia de filter, que me devuelve un array
+    const cuponInArray = cuponList.find(isCoupnInArray)
 
 
-    if (cuponInArray.length ) {
+    if (cuponInArray) {
         valorDescuento = cuponInArray.valorDescuento;
     } else {
         mostrarResultado.innerHTML = "El cupon no es Valido"
