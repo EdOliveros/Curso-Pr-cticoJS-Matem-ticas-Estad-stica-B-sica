@@ -72,9 +72,9 @@ PlatziMath.calcularModa = function calcularModa(lista) {
 }
 
 PlatziMath.calcularMediana = function calcularMediana(listaDesordenada) {
-    const array = ordenarLista(listaDesordenada)
+    const array = PlatziMath.ordenarLista(listaDesordenada)
 
-    const listaEsPar = esPar(array);
+    const listaEsPar = PlatziMath.esPar(array);
 
 
     if (listaEsPar) {
@@ -84,7 +84,7 @@ PlatziMath.calcularMediana = function calcularMediana(listaDesordenada) {
 
         const listaMitades = [MitadListaPar1, MitadListaPar2];
 
-        const medianaListaPar = calcularPromedio(listaMitades);
+        const medianaListaPar = PlatziMath.calcularPromedio(listaMitades);
         return medianaListaPar;
 
         // const IndexMitadListaPar1 = (array.length / 2) - 1;
