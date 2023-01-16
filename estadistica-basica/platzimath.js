@@ -100,7 +100,6 @@ PlatziMath.calcularMediana = function calcularMediana(listaDesordenada) {
     } else {
         const IndexMitadListaImpar = Math.floor(array.length / 2);
         const medianaListaImpar = array[IndexMitadListaImpar];
-        console.log(IndexMitadListaImpar);
         console.log(medianaListaImpar);
 
         return medianaListaImpar;
